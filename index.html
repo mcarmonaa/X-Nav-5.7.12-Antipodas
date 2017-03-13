@@ -1,25 +1,41 @@
+<!DOCTYPE html>
 <html>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-	<head>
- 		<title>Las Antipodas</title>
-		<style>
-			#map {
-				width:500px;
-				height: 400px;
-			}
- 		</style>
- 	</head>
-	<body>
-        	<p id='map'></p>
-  	        <script type="text/javascript" charset="utf-8">
-            function initMap(){
-                var mapDiv = document.getElementById("map");
-				var map = new google.maps.Map(mapDiv, {
-					center: {lat: 40.283743650362996, lng: -3.8191530513763428},
-					zoom: 15
-				});
- 			}
- 		</script>
-		<script src = "https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
-	</body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Geolocation, Maps">
+  <meta name="keywords" content="Geolocation, Maps">
+  <meta name="author" content="Manuel Carmona">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Antipodes</title>
+
+  <!-- My style -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- jQuery-3.1.1 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer></script>
+
+  <!-- modernizr -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" defer></script>
+
+  <!-- API Google Maps -->
+  <script src="https://maps.googleapis.com/maps/api/js" defer></script>
+
+  <!-- My script -->
+  <script src="js/script.js" defer></script>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+</head>
+
+<body>
+  <div id="map" class="map"></div>
+  <div id="antipodes" class="map"></div>
+</body>
+
 </html>
